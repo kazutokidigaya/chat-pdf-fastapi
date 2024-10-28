@@ -26,7 +26,7 @@ const ChatWindow = ({ documentId, setMessages, messages }) => {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/questions/ask-question/",
+        "https://chat-pdf-fastapi.onrender.com/questions/ask-question/",
         {
           document_id: documentId,
           question: input,

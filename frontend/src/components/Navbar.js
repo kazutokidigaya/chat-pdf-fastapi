@@ -18,7 +18,7 @@ const Navbar = ({
 
       try {
         const response = await axios.post(
-          "http://127.0.0.1:8000/pdf/upload-pdf/",
+          "https://chat-pdf-fastapi.onrender.com/pdf/upload-pdf/",
           formData,
           {
             headers: {

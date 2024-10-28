@@ -101,4 +101,3 @@ UPLOAD_FOLDER=uploads
 DATABASE_URL=postgresql://username:password@localhost/dbname
 GEMINI_API_KEY=your_groq_api_key_here
 ```
-# chat-pdf-fastapi

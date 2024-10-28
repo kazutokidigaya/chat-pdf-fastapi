@@ -1,0 +1,25 @@
+# Python / Backend
+backend/venv/
+backend/uploads/
+backend/__pycache__/
+backend/*.pyc
+backend/.env
+backend/*.sqlite3
+
+# Node.js / Frontend
+frontend/node_modules/
+frontend/build/
+frontend/.next/
+frontend/dist/
+
+# General
+.DS_Store
+.env
+*.log
+*.lock
+__pycache__/
+.idea/
+.vscode/
+*.swp
+*.swo
+*.iml

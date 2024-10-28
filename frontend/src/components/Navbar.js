@@ -12,7 +12,7 @@ const Navbar = ({
 
   const handleFileUpload = async (event) => {
     const file = event.target.files[0];
-    if (file) {
+    if (file && file.type === "application/pdf") {
       const formData = new FormData();
       formData.append("file", file);
 
@@ -35,6 +35,8 @@ const Navbar = ({
       } catch (error) {
         console.error("Error uploading PDF:", error);
       }
+    } else {
+      console.error("Only PDF files are allowed.");
     }
   };
 
@@ -51,6 +53,7 @@ const Navbar = ({
           type="file"
           ref={fileInputRef}
           style={{ display: "none" }}
+          accept="application/pdf"
           onChange={handleFileUpload}
         />
         <button
@@ -58,7 +61,6 @@ const Navbar = ({
           className="flex items-center space-x-2 px-2 py-2 rounded-lg text-black  border border-black hover:text-white hover:bg-black sm:px-8"
         >
           <IoAddCircleOutline size={20} />
-
           <span className="hidden sm:inline">Upload PDF</span>
         </button>
       </div>

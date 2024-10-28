@@ -7,3 +7,4 @@ requests
 groq
 pydantic
 psycopg2-binary
+python-multipart
